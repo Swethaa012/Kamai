@@ -1,0 +1,78 @@
+<!-- <ion-content>
+  <div class="main">
+    <div class="box">
+      
+      <div class="record">
+        <video id="recorded"    class="full-screen-video" autoplay controls [style.width.px]="300" [style.height.px]="300" hidden></video>
+      </div>
+    
+        <div class="icons">
+          <ion-icon class="pic" name="videocam" (click)="toggleRecording()"></ion-icon>
+        </div>
+      
+    </div>
+  </div>
+  <div class="btn">
+    <ion-button fill="outline" class="btn1">back</ion-button>
+    <ion-button style="--background:#F59300" [routerLink]="['/education']" routerLinkActive="router-link-active" class="next" (click)="stopVideoPlayback()">next</ion-button>
+  </div>
+</ion-content> -->
+
+
+<!-- <ion-button  expand="block" fill="clear" shape="round" (click)="TakeVideo()">
+  record video
+</ion-button>
+<ion-button  expand="block" fill="clear" shape="round" (click)="playVideo()">
+  play video
+</ion-button> -->
+<ion-content>
+  <div class="main">
+  <div class="progress-container">
+   
+    <div class="progress" id="progress"></div>
+    <div class="circle active">
+      <span>1</span>
+      <p class="instructions">instructions</p>
+    </div>
+    <div class="circle active1">
+     
+      <span>2</span>
+      <p class="personal">Personal <br>details</p>
+ 
+     
+    </div>
+    <div class="circle active2">
+      <span>3</span>
+      
+     
+    </div>
+    <div class="circle">
+      <span>4</span>
+     
+    </div>
+    <div class="circle">
+      <span>5</span>
+   
+    </div>
+  </div>
+  <div class="box">
+      
+    <div class="record">
+      <video id="recorded"    class="full-screen-video" autoplay controls [style.width.px]="300" [style.height.px]="380" hidden></video>
+    </div>
+  
+      <div class="icons">
+        <ion-icon class="pic" name="videocam" (click)="toggleRecording()"></ion-icon>
+      </div>
+    
+  </div>
+ 
+  </div>
+  <div class="btn">
+    <ion-button fill="outline" class="btn1" [routerLink]="['/personal']" routerLinkActive="router-link-active" >back</ion-button>
+    <ion-button style="--background:#F59300"  [routerLink]="['/skill']" routerLinkActive="router-link-active" class="next" >next</ion-button>
+  </div>
+
+ 
+ 
+  </ion-content>

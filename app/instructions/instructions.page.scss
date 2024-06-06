@@ -1,0 +1,226 @@
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 95vw;
+    margin-top: 20px;
+}
+ 
+.progress-container::before {
+    content: "";
+    background-color: #130160;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    left: calc(100px / 2);
+    right: calc(100px/2);
+    transform: translateY(-50%);
+    height: 3px;
+    width: 80vw;
+    z-index: -1;
+}
+ 
+.progress {
+    background-color: #130160;
+    position: absolute;
+    top: 50%;
+   
+    transform: translateY(-50%);
+    height: 3px;
+    width: 0%;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+ 
+.circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #dcdcdc;
+    color: #999;
+    border-radius: 50%;
+    height: 25px;  /* increased height to fit number and text */
+    width: 25px;   /* increased width to fit number and text */
+    border: 3px solid var(--line-border-empty);
+    transition: 0.4s ease;
+    position: relative;
+    margin-left: 25px;
+}
+ 
+.circle.active {
+    background-color: #130160;
+    color: white;
+    border-color: #130160;
+}
+ 
+.circle span {
+    font-size: 15px;  /* size adjustment for the number */
+    margin-top: 2px; /* to place the number in the middle */
+}
+ 
+.circle p {
+    position: absolute;
+    // bottom: -30px;  /* adjust as needed to position text below the circle */
+    font-size: 11px;
+    color: #130160;
+ margin-bottom:-50px ;
+ margin-left: 10px;
+ font-weight: 700;
+}
+ 
+ 
+ 
+ 
+    //   color: hsl(225, 91%, 51%);
+   
+   
+    // }
+    // .instructions{
+   
+    //   width: 270px;
+    //   height: 90px;
+    //  text-align: left;
+    //   // border: 1px solid rgb(26, 19, 233);
+    //  margin-left: 30px;
+   
+    //   font-size: 13px;
+    //   margin-bottom: 20px;
+   
+    // }
+    // .h{
+   
+    //  margin: 1px;
+    // }
+   
+   
+   
+   
+    .details{
+   
+    // border: 1px solid rgba(201, 5, 5, 0.758);
+   
+   
+    font-size: 1rem;
+    // text-align: left;
+    // width:88% ;
+    // height: 45%;
+    height: fit-content;
+   
+    // margin-right: 15px;
+    margin-left: 10px;
+    margin-top:20px ;
+ 
+   
+   
+   
+   
+    }
+    // .two{  
+    //   height: 398px;
+    //   width: 328px;
+    //   border: 1px solid black;
+    //   border-radius: 15px;
+    // margin: 15px;
+    // margin-bottom: 25px;
+    // margin-top: 50px;
+   
+   
+   
+    // }
+   
+   
+    .p1{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 14.52px;
+   
+    }
+    .p2{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 14.52px;
+    }
+    .p3{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14.52px;
+    font-style: italic;
+    }
+   
+    // .hello{
+   
+    //   --border-radius:10px;
+    //   padding: 10px,8px,10px,8px;
+    //   height: 36px;
+    //   width: 140px;
+    // --border-color:black;
+    // color: rgb(253, 250, 250);
+   
+   
+    .thick{
+    font-family: 'Inter', sans-serif;
+    font-weight: 750;
+   
+    font-size: 13px;
+    }
+    .thin{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin-top:2%;
+    font-size: 12px;
+   
+    }
+   
+   
+   
+   
+    .btn2{
+    margin-left: 10%;
+    border-radius: 10px;
+    background-color: #F59300;
+   
+    }
+   
+   
+    body{
+    height: 100%;
+    width: 100%;
+    }
+    .instructions{
+   
+    width: 83%;
+    height: 18%;
+    margin-left: 9%;
+    margin-top: 65px;
+   
+    }
+    .two{
+    // height: 48%;
+    // width:90%;
+    border: 1px black solid;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: -20px;
+   
+   
+   
+    }
+    .btn{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+   
+    }
+    .next{
+        width: 120px;
+       --border-radius: 15px;
+    }
+ .details{
+  width: 98%;
+ }

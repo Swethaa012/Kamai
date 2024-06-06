@@ -1,0 +1,307 @@
+p {
+  margin-right:20px ;
+}
+ 
+ 
+ 
+.box {
+ 
+    height:60vh;
+    width: 90vw;
+    border: 1px solid black;
+    margin-top: 10vh;
+    border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+  
+    margin-left: 18px;
+   
+   
+   
+   
+      }
+     
+     
+     
+ 
+   
+    // *{
+    //   margin: 0;
+    //   padding:0;
+    // }
+    // body{
+    //  height: 100vh;
+    //  width: 100vw;
+     
+    // }
+    // .main{
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: space-between;
+   
+    // }
+    // .progress-container {
+    //   display: flex;
+    //   justify-content: space-between;
+    //   position: relative;
+    //   margin-bottom: 30px;
+    //   max-width: 100%;
+    //   width: 95vw;
+    //   margin-top: 20px;
+    // }
+   
+    // .progress-container::before {
+    //   content: "";
+    //   background-color: #130160;
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 0;
+    //   // left: calc(100px / 2);
+    //   // right: calc(100px/2);
+    //   transform: translateY(-50%);
+    //   height: 3px;
+    //   width: 85vw;
+    //   z-index: -1;
+    // }
+   
+    // .progress {
+    //   background-color: #130160;
+    //   position: absolute;
+    //   top: 50%;
+     
+    //   transform: translateY(-50%);
+    //   height: 4px;
+    //   width: 0%;
+    //   z-index: -1;
+    //   transition: 0.4s ease;
+    // }
+   
+    // .circle {
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
+    //   justify-content: center;
+    //   background-color: #dcdcdc;
+    //   color: #999;
+    //   border-radius: 50%;
+    //   height: 30px;  /* increased height to fit number and text */
+    //   width: 30px;   /* increased width to fit number and text */
+    //   border: 3px solid var(--line-border-empty);
+    //   transition: 0.4s ease;
+    //   position: relative;
+    //   // margin-left: 25px;
+    // }
+   
+    // .circle.active {
+    //   background-color: #130160;
+    //   color: white;
+    //   font-weight: 400;
+    //   border-color: #130160;
+    // }
+ 
+ 
+    .progress-container {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      margin-bottom: 30px;
+      max-width: 100%;
+      width: 95vw;
+      margin-top: 20px;
+  }
+ 
+  .progress-container::before {
+      content: "";
+      background-color: #130160;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      left: calc(100px / 2);
+      right: calc(100px/2);
+      transform: translateY(-50%);
+      height: 3px;
+      width: 80vw;
+      z-index: -1;
+  }
+ 
+  .progress {
+      background-color: #130160;
+      position: absolute;
+      top: 50%;
+     
+      transform: translateY(-50%);
+      height: 3px;
+      width: 0%;
+      z-index: -1;
+      transition: 0.4s ease;
+  }
+ 
+  .circle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #dcdcdc;
+      color: #999;
+      border-radius: 50%;
+      height: 25px;  /* increased height to fit number and text */
+      width: 25px;   /* increased width to fit number and text */
+      border: 3px solid var(--line-border-empty);
+      transition: 0.4s ease;
+      position: relative;
+      margin-left: 25px;
+  }
+ 
+  .circle.active {
+      background-color: #130160;
+      color: white;
+      border-color: #130160;
+  }
+ 
+  .circle span {
+      font-size: 15px;  /* size adjustment for the number */
+      margin-top: 5px; /* to place the number in the middle */
+  }
+    .circle.active1{
+      background-color: #130160;
+      color: white;
+      font-weight: 700;
+      border-color: #130160;
+    }
+    .circle.active2{
+      background-color: #130160;
+      color: white;
+      font-weight: 700;
+      border-color: #130160;
+    }
+   
+    .circle.active3{
+      background-color: #130160;
+      color: white;
+      font-weight: 700;
+      border-color: #130160;
+    }
+   
+   
+    .circle span {
+      font-size: 15px;  /* size adjustment for the number */
+      margin-top: 2px; /* to place the number in the middle */
+    }
+   
+   
+    .personal{
+      position: absolute;
+     
+      font-size: 11px;
+      color: #130160;
+      margin-bottom:-50px ;
+      margin-left: 10px;
+      font-weight: 700;
+      margin-top: 10px;
+   
+    }
+    .instructions{
+      position: absolute;
+     
+      font-size: 11px;
+      color: #130160;
+      margin-bottom:-50px ;
+      margin-left: 25px;
+      font-weight: 400;
+      margin-top: 10px;
+   
+    }
+
+    .education{
+      position: absolute;
+     
+      font-size: 11px;
+      color: #130160;
+      margin-bottom:-50px ;
+      margin-left: 25px;
+      font-weight: 700;
+      margin-top: 10px;
+   
+    }
+    // .btn1{
+   
+     .btn1{
+      --border-color:#111812;
+   
+     color: #111812;
+       width: 40vw;
+     --border-radius: 10px;
+   
+    }
+    .next{
+      width: 40vw;
+      --border-radius: 10px;
+    }
+    .btn{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10vh;
+    }
+   
+    .icons {
+ 
+  height: 30px;
+  width: 30px;
+  
+  margin-left: 40vw;
+  margin-bottom: 5vh;
+  margin-right: 10px;
+ 
+    }
+
+
+   
+
+ 
+ .record {
+  margin-bottom: 20px; /* Add space between video and icons */
+}
+ 
+#recorded {
+  width: 300px; /* Make the video tag fill its container */
+  height: 500px;
+  
+  margin-left: 10px; /* Maintain aspect ratio */
+}
+ 
+.hidden {
+  display: none; /* Hide the video tag */
+}
+.smallbox{
+  display: flex;
+  justify-content: center;
+ 
+  margin-left: 30px;
+  margin-top: 70px;
+}
+/* personal.page.scss */
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.full-screen-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button {
+  position: absolute;
+  bottom: 10px;
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
