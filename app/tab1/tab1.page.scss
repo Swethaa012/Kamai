@@ -1,0 +1,45 @@
+.main{
+  height: 92vh;
+  width: 100vw;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h2{
+  color: #130160;
+  font-weight: 800;
+  font-family: montserrat;
+}
+.heading{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+  font-family: montserrat;
+}
+.button{
+  --border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+ margin-top: 30px;
+ font-size: 13px;
+
+}
+
+
+.btn1{
+     --border-color:#111812;
+   
+    color: #111812;
+   
+    width: 180px;
+}
+
+.btn2{
+  width: 150px;
+}
+p{
+text-align: center;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
