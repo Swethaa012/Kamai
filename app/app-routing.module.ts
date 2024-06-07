@@ -8,18 +8,7 @@ const routes: Routes = [
   },
   
   
-<<<<<<< HEAD
  
-=======
-  {
-    path: 'tab4',
-    loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
-  },
-  {
-    path: 'tab5',
-    loadChildren: () => import('./tab5/tab5.module').then( m => m.Tab5PageModule)
-  },
->>>>>>> origin/master
   {
     path: 'instructions',
     loadChildren: () => import('./instructions/instructions.module').then( m => m.InstructionsPageModule)
@@ -42,21 +31,9 @@ const routes: Routes = [
     path: 'extra',
     loadChildren: () => import('./extra/extra.module').then( m => m.ExtraPageModule)
   },
-<<<<<<< HEAD
   
   
  
-=======
-  {
-    path: 'sample',
-    loadChildren: () => import('./sample/sample.module').then( m => m.SamplePageModule)
-  },
-  
-  {
-    path: 'ribbon',
-    loadChildren: () => import('./ribbon/ribbon.module').then( m => m.RibbonPageModule)
-  },
->>>>>>> origin/master
   
   
  

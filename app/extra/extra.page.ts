@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { Capacitor } from '@capacitor/core';
-import { Platform, NavController } from '@ionic/angular';
+import { Platform } from '@ionic/angular';
 import { Location } from '@angular/common';
 import { Storage } from '@ionic/storage-angular';
-
+ 
 @Component({
   selector: 'app-extra',
   templateUrl: './extra.page.html',
@@ -16,16 +16,11 @@ export class ExtraPage {
   stream: MediaStream | null = null;
   _filepath: string | null = null;
   private _storage: Storage | null = null;
-
+ 
   constructor(
     private platform: Platform,
     private location: Location,
     private storage: Storage,
-<<<<<<< HEAD
-    private navCtrl: NavController 
-=======
-    private navCtrl: NavController // Inject NavController for navigation control
->>>>>>> origin/master
   ) {
     this.initStorage();
     this.platform.backButton.subscribeWithPriority(10, () => {
@@ -33,12 +28,12 @@ export class ExtraPage {
       this.goBack();
     });
   }
-
+ 
   async initStorage() {
     this._storage = await this.storage.create();
     this.loadVideo();
   }
-
+ 
   async toggleRecording() {
     if (this.isRecording) {
       this.stopRecording();
@@ -46,7 +41,7 @@ export class ExtraPage {
       await this.startRecording();
     }
   }
-
+ 
   async startRecording() {
     if (Capacitor.isNativePlatform()) {
       try {
@@ -82,13 +77,13 @@ export class ExtraPage {
       }
     }
   }
-
+ 
   stopRecording() {
     if (this.mediaRecorder && this.isRecording) {
       this.mediaRecorder.stop();
     }
   }
-
+ 
   async getUserMedia(): Promise<MediaStream> {
     try {
       return await navigator.mediaDevices.getUserMedia({
@@ -100,9 +95,9 @@ export class ExtraPage {
       throw error;
     }
   }
-
+ 
   playRecording() {
-    const recordedVideo = document.getElementById('recorded') as HTMLVideoElement;
+    const recordedVideo = document.getElementById('extraRecorded') as HTMLVideoElement;
     recordedVideo.hidden = false;
     if (Capacitor.isNativePlatform() && this._filepath) {
       recordedVideo.src = Capacitor.convertFileSrc(this._filepath);
@@ -114,36 +109,36 @@ export class ExtraPage {
     recordedVideo.autoplay = true;
     recordedVideo.muted = true;
   }
-
+ 
   stopVideoPlayback() {
-    const recordedVideo = document.getElementById('recorded') as HTMLVideoElement;
+    const recordedVideo = document.getElementById('extraRecorded') as HTMLVideoElement;
     if (recordedVideo) {
       recordedVideo.pause();
     }
   }
-
+ 
   goBack() {
     this.location.back();
   }
-
+ 
   async saveVideo() {
     if (this.recordedBlobs.length > 0) {
       const superBuffer = new Blob(this.recordedBlobs, { type: 'video/webm' });
       const reader = new FileReader();
       reader.onloadend = () => {
-        this._storage?.set('savedVideo', reader.result);
+        this._storage?.set('savedExtraVideo', reader.result); // Use a unique key for Extra video
       };
       reader.readAsDataURL(superBuffer);
     } else if (this._filepath) {
-      this._storage?.set('savedVideoPath', this._filepath);
+      this._storage?.set('savedExtraVideoPath', this._filepath); // Use a unique key for Extra video path
     }
   }
-
+ 
   async loadVideo() {
-    const recordedVideo = document.getElementById('recorded') as HTMLVideoElement;
-    const savedVideo = await this._storage?.get('savedVideo');
-    const savedVideoPath = await this._storage?.get('savedVideoPath');
-
+    const recordedVideo = document.getElementById('extraRecorded') as HTMLVideoElement;
+    const savedVideo = await this._storage?.get('savedExtraVideo'); // Load using the unique key for Extra video
+    const savedVideoPath = await this._storage?.get('savedExtraVideoPath'); // Load using the unique key for Extra video path
+ 
     if (savedVideo) {
       recordedVideo.src = savedVideo;
       recordedVideo.hidden = false;
@@ -152,7 +147,7 @@ export class ExtraPage {
       recordedVideo.hidden = false;
     }
   }
-
+ 
   ionViewWillLeave() {
     this.stopVideoPlayback();
   }

@@ -42,13 +42,8 @@
     background-color: #dcdcdc;
     color: #999;
     border-radius: 50%;
-<<<<<<< HEAD
     height: 25px; 
     width: 25px;  
-=======
-    height: 25px;  /* increased height to fit number and text */
-    width: 25px;   /* increased width to fit number and text */
->>>>>>> origin/master
     border: 3px solid var(--line-border-empty);
     transition: 0.4s ease;
     position: relative;
@@ -62,22 +57,13 @@
 }
  
 .circle span {
-<<<<<<< HEAD
     font-size: 15px; 
     margin-top: 2px; 
-=======
-    font-size: 15px;  /* size adjustment for the number */
-    margin-top: 2px; /* to place the number in the middle */
->>>>>>> origin/master
 }
  
 .circle p {
     position: absolute;
-<<<<<<< HEAD
     
-=======
-    // bottom: -30px;  /* adjust as needed to position text below the circle */
->>>>>>> origin/master
     font-size: 11px;
     color: #130160;
  margin-bottom:-50px ;
@@ -85,7 +71,6 @@
  font-weight: 700;
 }
  
-<<<<<<< HEAD
 .details{
    
    
@@ -98,75 +83,10 @@
     margin-top:20px ;
    }
  .p1{
-=======
- 
- 
- 
-    //   color: hsl(225, 91%, 51%);
-   
-   
-    // }
-    // .instructions{
-   
-    //   width: 270px;
-    //   height: 90px;
-    //  text-align: left;
-    //   // border: 1px solid rgb(26, 19, 233);
-    //  margin-left: 30px;
-   
-    //   font-size: 13px;
-    //   margin-bottom: 20px;
-   
-    // }
-    // .h{
-   
-    //  margin: 1px;
-    // }
-   
-   
-   
-   
-    .details{
-   
-    // border: 1px solid rgba(201, 5, 5, 0.758);
-   
-   
-    font-size: 1rem;
-    // text-align: left;
-    // width:88% ;
-    // height: 45%;
-    height: fit-content;
-   
-    // margin-right: 15px;
-    margin-left: 10px;
-    margin-top:20px ;
- 
-   
-   
-   
-   
-    }
-    // .two{  
-    //   height: 398px;
-    //   width: 328px;
-    //   border: 1px solid black;
-    //   border-radius: 15px;
-    // margin: 15px;
-    // margin-bottom: 25px;
-    // margin-top: 50px;
-   
-   
-   
-    // }
-   
-   
-    .p1{
->>>>>>> origin/master
     font-size: 13px;
     font-weight: 500;
     line-height: 14.52px;
    
-<<<<<<< HEAD
 }
 .p2{
     font-size: 13px;
@@ -174,35 +94,13 @@
     line-height: 14.52px;  }
 
 
-=======
-    }
-    .p2{
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 14.52px;
-    }
->>>>>>> origin/master
     .p3{
     font-size: 13px;
     font-weight: 400;
     line-height: 14.52px;
     font-style: italic;
     }
-<<<<<<< HEAD
  
-=======
-   
-    // .hello{
-   
-    //   --border-radius:10px;
-    //   padding: 10px,8px,10px,8px;
-    //   height: 36px;
-    //   width: 140px;
-    // --border-color:black;
-    // color: rgb(253, 250, 250);
-   
-   
->>>>>>> origin/master
     .thick{
     font-family: 'Inter', sans-serif;
     font-weight: 750;
@@ -216,25 +114,13 @@
     font-size: 12px;
    
     }
-<<<<<<< HEAD
    .btn2{
-=======
-   
-   
-   
-   
-    .btn2{
->>>>>>> origin/master
     margin-left: 10%;
     border-radius: 10px;
     background-color: #F59300;
    
     }
    
-<<<<<<< HEAD
-=======
-   
->>>>>>> origin/master
     body{
     height: 100%;
     width: 100%;
@@ -248,25 +134,14 @@
    
     }
     .two{
-<<<<<<< HEAD
    
-=======
-    // height: 48%;
-    // width:90%;
->>>>>>> origin/master
     border: 1px black solid;
     border-radius: 15px;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: -20px;
    
-<<<<<<< HEAD
    }
-=======
-   
-   
-    }
->>>>>>> origin/master
     .btn{
     margin-top: 10%;
     display: flex;
