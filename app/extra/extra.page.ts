@@ -21,7 +21,11 @@ export class ExtraPage {
     private platform: Platform,
     private location: Location,
     private storage: Storage,
+<<<<<<< HEAD
     private navCtrl: NavController 
+=======
+    private navCtrl: NavController // Inject NavController for navigation control
+>>>>>>> origin/master
   ) {
     this.initStorage();
     this.platform.backButton.subscribeWithPriority(10, () => {

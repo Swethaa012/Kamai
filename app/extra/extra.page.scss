@@ -22,7 +22,87 @@ p {
         }
        
        
+<<<<<<< HEAD
     
+=======
+       
+   
+     
+      // *{
+      //   margin: 0;
+      //   padding:0;
+      // }
+      // body{
+      //  height: 100vh;
+      //  width: 100vw;
+       
+      // }
+      // .main{
+      //   display: flex;
+      //   flex-direction: column;
+      //   justify-content: space-between;
+     
+      // }
+      // .progress-container {
+      //   display: flex;
+      //   justify-content: space-between;
+      //   position: relative;
+      //   margin-bottom: 30px;
+      //   max-width: 100%;
+      //   width: 95vw;
+      //   margin-top: 20px;
+      // }
+     
+      // .progress-container::before {
+      //   content: "";
+      //   background-color: #130160;
+      //   position: absolute;
+      //   top: 50%;
+      //   left: 0;
+      //   // left: calc(100px / 2);
+      //   // right: calc(100px/2);
+      //   transform: translateY(-50%);
+      //   height: 3px;
+      //   width: 85vw;
+      //   z-index: -1;
+      // }
+     
+      // .progress {
+      //   background-color: #130160;
+      //   position: absolute;
+      //   top: 50%;
+       
+      //   transform: translateY(-50%);
+      //   height: 4px;
+      //   width: 0%;
+      //   z-index: -1;
+      //   transition: 0.4s ease;
+      // }
+     
+      // .circle {
+      //   display: flex;
+      //   flex-direction: column;
+      //   align-items: center;
+      //   justify-content: center;
+      //   background-color: #dcdcdc;
+      //   color: #999;
+      //   border-radius: 50%;
+      //   height: 30px;  /* increased height to fit number and text */
+      //   width: 30px;   /* increased width to fit number and text */
+      //   border: 3px solid var(--line-border-empty);
+      //   transition: 0.4s ease;
+      //   position: relative;
+      //   // margin-left: 25px;
+      // }
+     
+      // .circle.active {
+      //   background-color: #130160;
+      //   color: white;
+      //   font-weight: 400;
+      //   border-color: #130160;
+      // }
+   
+>>>>>>> origin/master
    
       .progress-container {
         display: flex;
@@ -68,8 +148,13 @@ p {
         background-color: #dcdcdc;
         color: #999;
         border-radius: 50%;
+<<<<<<< HEAD
         height: 25px; 
         width: 25px;   
+=======
+        height: 25px;  /* increased height to fit number and text */
+        width: 25px;   /* increased width to fit number and text */
+>>>>>>> origin/master
         border: 3px solid var(--line-border-empty);
         transition: 0.4s ease;
         position: relative;
@@ -83,8 +168,13 @@ p {
     }
    
     .circle span {
+<<<<<<< HEAD
         font-size: 15px;  
         margin-top: 5px; 
+=======
+        font-size: 15px;  /* size adjustment for the number */
+        margin-top: 5px; /* to place the number in the middle */
+>>>>>>> origin/master
     }
       .circle.active1{
         background-color: #130160;
@@ -113,8 +203,13 @@ p {
       }
      
       .circle span {
+<<<<<<< HEAD
         font-size: 15px;  
         margin-top: 2px; 
+=======
+        font-size: 15px;  /* size adjustment for the number */
+        margin-top: 2px; /* to place the number in the middle */
+>>>>>>> origin/master
       }
      
      
@@ -127,6 +222,7 @@ p {
         margin-left: 10px;
         font-weight: 500;
         margin-top: 10px;
+<<<<<<< HEAD
          word-spacing:4px ;
      
       }
@@ -140,6 +236,8 @@ p {
         margin-left: 10px;
         font-weight: 500;
         margin-top: 10px;
+=======
+>>>>>>> origin/master
      
       }
       .personal{
@@ -164,6 +262,7 @@ p {
         margin-top: 10px;
      
       }
+<<<<<<< HEAD
       .education{
         position: absolute;
        
@@ -175,6 +274,8 @@ p {
         margin-top: 10px;
      
       }
+=======
+>>>>>>> origin/master
       // .btn1{
      
        .btn1{

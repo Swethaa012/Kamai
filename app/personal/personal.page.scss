@@ -14,7 +14,11 @@ p {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+<<<<<<< HEAD
  
+=======
+  
+>>>>>>> origin/master
     margin-left: 18px;
    
    
@@ -224,16 +228,27 @@ p {
  
   height: 30px;
   width: 30px;
+<<<<<<< HEAD
  
+=======
+  
+>>>>>>> origin/master
   margin-left: 40vw;
   margin-bottom: 5vh;
   margin-right: 10px;
  
     }
+<<<<<<< HEAD
  
  
    
  
+=======
+
+
+   
+
+>>>>>>> origin/master
  
  .record {
   margin-bottom: 20px; /* Add space between video and icons */
@@ -242,7 +257,11 @@ p {
 #recorded {
   width: 300px; /* Make the video tag fill its container */
   height: 500px;
+<<<<<<< HEAD
  
+=======
+  
+>>>>>>> origin/master
   margin-left: 10px; /* Maintain aspect ratio */
 }
  
@@ -265,13 +284,21 @@ p {
   height: 100vh;
   width: 100vw;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/master
 .full-screen-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/master
 button {
   position: absolute;
   bottom: 10px;
@@ -280,4 +307,8 @@ button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master

@@ -3,7 +3,11 @@ import { Capacitor } from '@capacitor/core';
 import { Platform, NavController } from '@ionic/angular';
 import { Location } from '@angular/common';
 import { Storage } from '@ionic/storage-angular';
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/master
 @Component({
   selector: 'app-skill',
   templateUrl: './skill.page.html',
@@ -16,7 +20,11 @@ export class SkillPage {
   stream: MediaStream | null = null;
   _filepath: string | null = null;
   private _storage: Storage | null = null;
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/master
   constructor(
     private platform: Platform,
     private location: Location,
@@ -29,12 +37,20 @@ export class SkillPage {
       this.goBack();
     });
   }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/master
   async initStorage() {
     this._storage = await this.storage.create();
     this.loadVideo();
   }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/master
   async toggleRecording() {
     if (this.isRecording) {
       this.stopRecording();
@@ -42,7 +58,11 @@ export class SkillPage {
       await this.startRecording();
     }
   }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/master
   async startRecording() {
     if (Capacitor.isNativePlatform()) {
       try {
@@ -78,13 +98,21 @@ export class SkillPage {
       }
     }
   }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/master
   stopRecording() {
     if (this.mediaRecorder && this.isRecording) {
       this.mediaRecorder.stop();
     }
   }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/master
   async getUserMedia(): Promise<MediaStream> {
     try {
       return await navigator.mediaDevices.getUserMedia({
@@ -96,7 +124,11 @@ export class SkillPage {
       throw error;
     }
   }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/master
   playRecording() {
     const recordedVideo = document.getElementById('recorded') as HTMLVideoElement;
     recordedVideo.hidden = false;
@@ -110,18 +142,30 @@ export class SkillPage {
     recordedVideo.autoplay = true;
     recordedVideo.muted = true;
   }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/master
   stopVideoPlayback() {
     const recordedVideo = document.getElementById('recorded') as HTMLVideoElement;
     if (recordedVideo) {
       recordedVideo.pause();
     }
   }
+<<<<<<< HEAD
  
   goBack() {
     this.location.back();
   }
  
+=======
+
+  goBack() {
+    this.location.back();
+  }
+
+>>>>>>> origin/master
   async saveVideo() {
     if (this.recordedBlobs.length > 0) {
       const superBuffer = new Blob(this.recordedBlobs, { type: 'video/webm' });
@@ -134,12 +178,20 @@ export class SkillPage {
       this._storage?.set('savedVideoPath', this._filepath);
     }
   }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/master
   async loadVideo() {
     const recordedVideo = document.getElementById('recorded') as HTMLVideoElement;
     const savedVideo = await this._storage?.get('savedVideo');
     const savedVideoPath = await this._storage?.get('savedVideoPath');
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/master
     if (savedVideo) {
       recordedVideo.src = savedVideo;
       recordedVideo.hidden = false;
@@ -148,9 +200,16 @@ export class SkillPage {
       recordedVideo.hidden = false;
     }
   }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/master
   ionViewWillLeave() {
     this.stopVideoPlayback();
   }
 }
+<<<<<<< HEAD
  
+=======
+>>>>>>> origin/master
